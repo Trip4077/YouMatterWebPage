@@ -1,0 +1,410 @@
+* {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+body {
+  background-color: rgb(183,183,183);
+}
+
+h2 {
+  text-align: center;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button:focus {
+  outline:0;
+}
+
+.header {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+}
+
+.bg {
+    background-image: linear-gradient(rgba(1,22,56,0), rgba(1,22,56,0), rgba(1,22,56,.4),rgba(1,22,56, .5), rgba(1,22,56,.8));
+    padding-bottom: 15px;
+    border-radius: 16px;
+    mix-blend-mode:overlay;
+}
+
+.top-header {
+  display: flex;
+  justify-content: flex-start;
+  width: 950px;
+}
+
+.bottom-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+}
+
+
+.nav-bar {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-nav li {
+  padding-left: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.main-nav li > a {
+  color: black;
+  text-decoration: none;
+}
+
+.main-nav li > a:hover {
+  color: white;
+}
+
+.main-nav li > a:active {
+  color: #F0F757;
+}
+
+.pipe {
+  margin-left: 7px;
+}
+
+.buttons {
+  display: flex;
+
+}
+
+.buttons-style {
+  border-radius: 5px 10px 10px 0;
+  font-size: 16px;
+  height: 30px;
+  width: 150px;
+  padding: 3px;
+  margin: 5px;
+  background-color: #F0F757;
+  border: none;
+  letter-spacing: 3px;
+}
+
+#donate,
+#SignUp {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.buttons-style:hover {
+  background-color: #F5F994;
+  border-top: 3px solid #B6BA68;
+  border-left: 4px solid #B6BA68;
+}
+
+.buttons-style > a:active{
+  background-color: rgba(64, 6, 95, .1);
+}
+
+.search {
+  margin-left: 25px;
+  border: .25px solid rgba(20, 20, 20, .2);
+}
+
+.glyphicon-search {
+  font-size: 13px;
+}
+
+.btn-default,
+.btn-default:focus {
+  background-color: transparent;
+  height: 35px;
+  width: 35px;
+  padding: 12.5px;
+  outline: none;
+  border: none;
+}
+
+#search_icon {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  left: -10px;
+  top: -6px;
+}
+
+.hotline {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px dashed black;
+  border-left: 2px dashed black;
+  border-right: 2px dashed black;
+  border-radius: 20px 20px 0 0;
+  background-color: silver;
+  margin-top: 75px;
+}
+
+.stats-head {
+  position: relative;
+  background-image: url(images/background_blank.png);
+  color: white;
+  margin: 0 auto;
+  width: 700px;
+  left: 30px;
+  border-radius: 10px;
+}
+
+.title-of-section {
+  text-align: left;
+  font-style: normal;
+}
+
+.subhead {
+  position: relative;
+  left: 40px;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#pie-chart,
+#each-year-stat {
+  border-radius: 20px;
+  margin-top: 25px;
+  margin-left: 10px;
+  flex: .3;
+}
+
+#bar-graph {
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-left: 10px;
+  flex: .3;
+}
+
+.mission-title {
+  margin-top: 75px;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+.mission-subhead {
+  margin-top: 5px;
+  margin-bottom: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 22px;
+  font-style: italic;
+}
+
+.divider {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.mission-text-container {
+  display: flex;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.love-img {
+  border: 1px solid black;
+  clear: right;
+}
+
+.mission-text {
+  height: 200px;
+  width: 305px;
+  text-align: center;
+  font-style: normal;
+  font-size: 15px;
+}
+
+
+.mission-list {
+  height: 150px;
+  width: 600px;
+  margin-left: 140px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.mission-list > li {
+  position: relative;
+  left: -60px;
+  margin: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.mission-footer {
+  height: 150px;
+  width: 800px;
+  text-align: center;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.location {
+  display: flex;
+  margin-top: 150px;
+}
+
+.location > img {
+    display: flex;
+    position: relative;
+    left: 300px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+.location-form {
+  position: relative;
+  height: 50px;
+  width: 125px;
+  top: 200px;
+  left: -600px;
+  padding-left: 25px;
+  font-weight: bold;
+  border: 1px dashed black;
+  letter-spacing: 1px;
+}
+
+.location-text {
+  font-size: 25px;
+  height: 70px;
+  width: 300px;
+  z-index: 1;
+  position: relative;
+  top: 100px;
+  left: -725px;
+  font-weight: bold;
+}
+
+.membership-container {
+  display: block;
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.membership-header {
+  height: 250px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.membership-header > h3 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.membership-header > p {
+  margin: 0;
+  text-align: center;
+}
+
+.membership-form-container {
+  height: 400px;
+  flex-wrap: wrap;
+}
+
+.membership-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.membership-form > label {
+  height: 20px;
+  width: 100px;
+  margin: 15px;
+}
+
+.membership-form > input {
+  height: 30px;
+  width: 130px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.membership-form > p {
+  border-bottom: 1px solid black;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.required-input {
+  color: red;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+footer {
+  height: 300px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-size: 14px;
+  color: silver;
+}
+
+.copyright {
+  display: flex;
+  height: 100px;
+  background-color: #363636;
+  padding-left: 550px;
+  padding-top: 40px;
+}
+
+#documents {
+  color: white
+}
+#documents:hover {
+  text-decoration: underline;
+}
+
+.nonprofit {
+  display: flex;
+  height:200px;
+  background-color: #1c1b1b;
+  padding-left: 175px;
+  padding-top: 75px;
+}
